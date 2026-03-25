@@ -27,12 +27,12 @@ variable "az_private_subnet" {
 
 variable "private_subnet_tags" {
   description = "Private subnet tags"
-  type        = string
+  type        = map(string)
 }
 
 variable "public_subnet_tags" {
   description = "Public subnet tags"
-  type        = string
+  type        = map(string)
 }
 
 variable "nat_gateway_count" {
