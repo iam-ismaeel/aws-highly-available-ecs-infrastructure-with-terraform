@@ -26,7 +26,7 @@ variable "image" {
 variable "container_port" {
   description = "Application container port"
   type        = number
-  default     = 80
+  default     = 8080
 }
 
 variable "cpu" {
@@ -63,4 +63,9 @@ variable "assign_public_ip" {
   description = "Assign public IP to ECS task"
   type        = bool
   default     = false
+}
+
+variable "region" {
+  description = "The aws region"
+  type        = string
 }

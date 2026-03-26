@@ -6,6 +6,6 @@ resource "aws_lb_target_group" "ecs_tg" {
   vpc_id      = var.vpc_id
 
   health_check {
-    path = "/"
+    path = "/api/method/ping"
   }
 }

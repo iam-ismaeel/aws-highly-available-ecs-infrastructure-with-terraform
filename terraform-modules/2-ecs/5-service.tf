@@ -14,7 +14,7 @@ resource "aws_ecs_service" "app" {
   load_balancer {
   target_group_arn = aws_lb_target_group.ecs_tg.arn
   container_name   = "ismail-app"
-  container_port   = 80
+  container_port   = 8000
   }
 
   deployment_circuit_breaker {
